@@ -19,6 +19,7 @@ Number one: I see far too many people being far too excited about flooding the i
 I don't want it, I don't think anyone wants it, yet there are people pumping it out like it's a gold rush.
 
 > But Martin, you might say, you've now done exactly that. - A concerned smartass
+
 Yeah, but to point out that this is bullshit. I mean, look at it, that's in the fucking domain name.
 
 Number two: I wanted to see if people can tell which parts of this website are real (and have been taken from very dead-serious big business corporations) and what's just AI slop. I'm being fair and state the sources where such sources exists, so it's trivial if you scroll to the end of a page, but ask yourself: Without this, would you have spotted the difference?
