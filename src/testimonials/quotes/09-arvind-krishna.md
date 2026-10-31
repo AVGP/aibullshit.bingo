@@ -3,7 +3,7 @@ name: "Arvind Krishna"
 role: "Chairman & Chief Executive Officer"
 company: "IBM"
 context: "IBM THINK Keynote on Hybrid Cloud & Enterprise Gen AI"
-photo: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Arvind_Krishna_in_2025.jpg"
+photo: "/assets/images/testimonials/arvind-krishna.jpg"
 order: 9
 quote: "The era of AI experimentation is over. Today's competitive advantage comes from purpose-built AI integration that drives measurable business outcomes."
 sourceTitle: "IBM Newsroom: IBM Accelerates Enterprise Gen AI Revolution with Hybrid Capabilities"

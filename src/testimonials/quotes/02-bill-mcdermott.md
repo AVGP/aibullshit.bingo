@@ -3,7 +3,7 @@ name: "Bill McDermott"
 role: "Chairman & Chief Executive Officer"
 company: "ServiceNow"
 context: "Q3 Financial Results & Enterprise AI Control Tower Commentary"
-photo: "https://upload.wikimedia.org/wikipedia/commons/0/05/SAP_ExecutiveBoard_McDermott_002.jpg"
+photo: "/assets/images/testimonials/bill-mcdermott.jpg"
 order: 2
 quote: "This was more than another beat-and-raise quarter for ServiceNow, this was the inflection point for ServiceNow as the Super Intelligence Control Tower. Our customers have validated our strategic relevance as the single harness for enterprise intelligence and security. The Control Tower is the elixir that simplifies tech debt, limits token overload and manages unprecedented cybersecurity risk."
 sourceTitle: "ServiceNow Press Release: ServiceNow Reports Third Quarter Financial Results"

@@ -3,7 +3,7 @@ name: "Bob Sternfels"
 role: "Global Managing Partner"
 company: "McKinsey & Company"
 context: "Launch of the OpenAI Frontier Alliance for Enterprise Transformation"
-photo: "https://upload.wikimedia.org/wikipedia/commons/d/db/Bob_Sternfels_at_World_Economic_Forum_Davos_2023.png"
+photo: "/assets/images/testimonials/bob-sternfels.jpg"
 order: 4
 quote: "CEOs and business leaders face unprecedented challenges in capturing value with agentic AI. To scale, they must rewire their businesses, reimagining domains and evolving how their people work, build capabilities, and lead change. McKinsey's deep domain expertise and experience with high-impact tech transformations, infused with OpenAI's leading Frontier technology, will help clients close this gap and capture real value."
 sourceTitle: "OpenAI Index: OpenAI Announces Frontier Alliance Partners"

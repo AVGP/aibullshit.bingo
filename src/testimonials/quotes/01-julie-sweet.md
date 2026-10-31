@@ -3,7 +3,7 @@ name: "Julie Sweet"
 role: "Chair & Chief Executive Officer"
 company: "Accenture"
 context: "Announcing the consolidation of Strategy, Consulting, Song, Technology, and Operations into 'Reinvention Services'"
-photo: "https://upload.wikimedia.org/wikipedia/commons/4/45/Julie_Sweet_at_the_World_Economic_Forum.jpg"
+photo: "/assets/images/testimonials/julie-sweet.jpg"
 order: 1
 quote: "Today, our clients need more value faster, and Accenture is their reinvention partner of choice. These changes to our growth model will allow us to deliver that value and continue to scale our business by being an even stronger engine of reinvention that more rapidly delivers the power of Gen AI. We are writing the playbook for how to be the most AI-enabled, client-focused professional services company in the world and a great place to work for our people—our reinventors."
 sourceTitle: "Accenture Newsroom: Accenture Changes Growth Model to Reinvent Itself for the Age of AI"

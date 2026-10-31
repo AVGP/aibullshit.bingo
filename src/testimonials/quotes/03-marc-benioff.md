@@ -3,7 +3,7 @@ name: "Marc Benioff"
 role: "Chair & Chief Executive Officer"
 company: "Salesforce"
 context: "Unveiling the Agentforce 2.0 Digital Labor Platform"
-photo: "https://upload.wikimedia.org/wikipedia/commons/1/19/Marc_Benioff.jpg"
+photo: "/assets/images/testimonials/marc-benioff.jpg"
 order: 3
 quote: "Agentic AI is a new labor model, new productivity model, and a new economic model. Agentforce 2.0 takes our revolutionary Salesforce digital labor platform to another level, with new reasoning, integration and customization features that supercharge autonomous agents with unprecedented levels of intelligence, precision and accuracy."
 sourceTitle: "Salesforce Newsroom: Salesforce Announces Agentforce 2.0, The Digital Labor Platform"

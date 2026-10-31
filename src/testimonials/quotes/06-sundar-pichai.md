@@ -3,7 +3,7 @@ name: "Sundar Pichai"
 role: "Chief Executive Officer"
 company: "Alphabet & Google"
 context: "Google I/O Keynote & Official Google Blog on Enterprise Agents"
-photo: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Sundar_Pichai_(2023).jpg"
+photo: "/assets/images/testimonials/sundar-pichai.jpg"
 order: 6
 quote: "We're firmly in the agentic Gemini era. Last fall we introduced Gemini Enterprise, the end-to-end system for the agentic era — the connective tissue between your data, your people and your goals. It has great momentum... through this rapid growth, we've seen how every employee in every organization can become a builder."
 sourceTitle: "The Keyword (Google Blog): Welcome to the Agentic Gemini Era"

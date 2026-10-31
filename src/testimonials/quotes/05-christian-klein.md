@@ -3,7 +3,7 @@ name: "Christian Klein"
 role: "Chief Executive Officer & Member of the Executive Board"
 company: "SAP SE"
 context: "Keynote Announcement on SAP Autonomous Suite & Business AI"
-photo: "https://upload.wikimedia.org/wikipedia/commons/1/1e/Christian_Klein_(born_1980)_at_World_Economic_Forum_Davos_2023.png"
+photo: "/assets/images/testimonials/christian-klein.jpg"
 order: 5
 quote: "This is a breakthrough moment for business AI. The Autonomous Enterprise has arrived. With Joule and SAP Autonomous Suite, built on SAP Business AI Platform, we're helping organizations like Novartis, Morgan Foods, Nestlé and PwC connect intelligence across every function to deliver trusted business outcomes."
 sourceTitle: "SAP News Center: SAP Puts the Autonomous Enterprise to Work"
