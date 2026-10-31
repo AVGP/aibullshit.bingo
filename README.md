@@ -1,27 +1,6 @@
 # AI Business Future Solutions
 ### Enterprise AI Thought Leadership Website — Built with 11ty (`@11ty/eleventy`)
 
-A clean, modern, Markdown-driven corporate website for **AI Business Future Solutions**.
-
-## Quick Start
-
-```bash
-# Build static production site into _site/
-npm run build
-
-# Start local 11ty development server
-npm start
-```
-
-## Content Structure (`src/`)
-
-- **Landing Page (`src/index.md`)**: Opening headline, executive intro copy, and strategic comparison table.
-- **Core Capabilities (`src/pillars/*.md`)**: Modular Markdown files for the four strategic pillars.
-- **Research & Infographics (`src/infographics/*.md`)**: Clean corporate SVG charts and takeaways.
-- **Executive Leadership (`src/team/index.md` & `src/team/members/*.md`)**: Executive team bios and portraits.
-- **Thought Leadership (`src/thought-leadership/index.md` & `src/thought-leadership/articles/*.md`)**: Executive reports and briefings.
-- **Case Studies (`src/case-studies/index.md` & `src/case-studies/studies/*.md`)**: Client impact stories across banking, logistics, healthcare, and energy.
-
 ## All of this bullshit was created by AI.
 
 Antigravity built this bunch of bullshit.
@@ -45,3 +24,28 @@ You are tasked with explaining why AI will shape the business landscape and what
 
 Which lead to the bullshit mountain that can be seen in "The productivity paradox" under "Thought Leadership".
 [Source file is here](/src/thought-leadership/articles/00b-the-productivity-paradox.md).
+
+Anyway, back to the bullshit.
+
+# The generated bullshit
+
+A clean, modern, Markdown-driven corporate website for **AI Business Future Solutions**.
+
+## Quick Start
+
+```bash
+# Build static production site into _site/
+npm run build
+
+# Start local 11ty development server
+npm start
+```
+
+## Content Structure (`src/`)
+
+- **Landing Page (`src/index.md`)**: Opening headline, executive intro copy, and strategic comparison table.
+- **Core Capabilities (`src/pillars/*.md`)**: Modular Markdown files for the four strategic pillars.
+- **Research & Infographics (`src/infographics/*.md`)**: Clean corporate SVG charts and takeaways.
+- **Executive Leadership (`src/team/index.md` & `src/team/members/*.md`)**: Executive team bios and portraits.
+- **Thought Leadership (`src/thought-leadership/index.md` & `src/thought-leadership/articles/*.md`)**: Executive reports and briefings.
+- **Case Studies (`src/case-studies/index.md` & `src/case-studies/studies/*.md`)**: Client impact stories across banking, logistics, healthcare, and energy.
