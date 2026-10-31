@@ -10,6 +10,12 @@ module.exports = function (eleventyConfig) {
       .sort((a, b) => (a.data.order || 99) - (b.data.order || 99));
   });
 
+  eleventyConfig.addCollection("testimonials", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("src/testimonials/quotes/*.md")
+      .sort((a, b) => (a.data.order || 99) - (b.data.order || 99));
+  });
+
   eleventyConfig.addCollection("thoughtLeadership", function (collectionApi) {
     return collectionApi
       .getFilteredByGlob("src/thought-leadership/articles/*.md")

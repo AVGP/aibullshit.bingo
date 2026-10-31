@@ -1,0 +1,72 @@
+---
+layout: layouts/base.njk
+---
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">{{ eyebrow }}</span>
+    <h1 class="page-title">{{ title }}</h1>
+    <p class="page-subtitle">{{ subtitle }}</p>
+  </div>
+</section>
+
+<section class="section-block">
+  <div class="container">
+    <div class="markdown-prose intro-prose">
+      {{ content | safe }}
+    </div>
+
+    <div class="team-full-stack testimonials-stack">
+      {% for item in collections.testimonials %}
+        <article class="exec-dossier-card testimonial-card" id="{{ item.fileSlug }}">
+          <div class="dossier-photo-col testimonial-photo-col">
+            <img
+              src="{{ item.data.photo }}"
+              alt="{{ item.data.name }}, {{ item.data.role }} at {{ item.data.company }}"
+              class="dossier-photo testimonial-photo"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+            />
+            <span class="testimonial-company-badge">{{ item.data.company }}</span>
+          </div>
+
+          <div class="dossier-content-col">
+            <div class="testimonial-header-row">
+              <div>
+                <h2>{{ item.data.name }}</h2>
+                <p class="dossier-role">{{ item.data.role }} · <strong>{{ item.data.company }}</strong></p>
+                <p class="dossier-creds">{{ item.data.context }}</p>
+              </div>
+              <a href="{{ item.data.sourceUrl }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm testimonial-source-btn">
+                Verified Source ↗
+              </a>
+            </div>
+
+            <blockquote class="dossier-quote testimonial-quote">
+              “{{ item.data.quote }}”
+            </blockquote>
+
+            <div class="markdown-prose dossier-bio">
+              {{ item.templateContent | safe }}
+            </div>
+
+            <div class="testimonial-footer-bar">
+              <div class="competency-tags">
+                {% for word in item.data.buzzwords %}
+                  <span class="comp-pill">{{ word }}</span>
+                {% endfor %}
+              </div>
+
+              <div class="testimonial-citation">
+                <span class="meta-label">Primary Source Citation</span>
+                <a href="{{ item.data.sourceUrl }}" target="_blank" rel="noopener noreferrer" class="text-link">
+                  {{ item.data.sourceTitle }} ({{ item.data.sourceDate }}) →
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

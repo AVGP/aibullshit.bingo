@@ -152,30 +152,36 @@ layout: layouts/base.njk
   </div>
 </section>
 
-<!-- LEADERSHIP PREVIEW -->
-<section class="section-block" id="leadership">
+<!-- TESTIMONIALS PREVIEW -->
+<section class="section-block" id="testimonials">
   <div class="container">
     <div class="section-header-split">
       <div>
-        <span class="eyebrow">LEADERSHIP</span>
-        <h2>Guided by Seasoned Enterprise Executives</h2>
+        <span class="eyebrow">INDUSTRY TESTIMONIALS</span>
+        <h2>Validated by Global Enterprise Titans</h2>
       </div>
-      <a href="/team/" class="btn btn-primary">Meet the Full Team →</a>
+      <a href="/testimonials/" class="btn btn-primary">View All Testimonials →</a>
     </div>
 
     <div class="team-preview-grid">
-      {% for member in collections.team %}
-        <article class="exec-card">
-          <div class="exec-photo-wrap">
-            <img src="{{ member.data.photo }}" alt="{{ member.data.name }}" loading="lazy" class="exec-photo" />
-          </div>
-          <div class="exec-card-body">
-            <h3>{{ member.data.name }}</h3>
-            <p class="exec-role">{{ member.data.role }}</p>
-            <p class="exec-creds">{{ member.data.credentials }}</p>
-            <a href="/team/#{{ member.fileSlug }}" class="text-link">View Bio →</a>
-          </div>
-        </article>
+      {% for item in collections.testimonials %}
+        {% if loop.index <= 6 %}
+          <article class="exec-card testimonial-preview-card">
+            <div class="exec-photo-wrap">
+              <img src="{{ item.data.photo }}" alt="{{ item.data.name }}" loading="lazy" referrerpolicy="no-referrer" class="exec-photo" />
+            </div>
+            <div class="exec-card-body">
+              <span class="category-tag">{{ item.data.company }}</span>
+              <h3>{{ item.data.name }}</h3>
+              <p class="exec-role">{{ item.data.role }}</p>
+              <blockquote class="testimonial-preview-quote">“{{ item.data.quote | truncate(160) }}”</blockquote>
+              <div class="testimonial-preview-links">
+                <a href="/testimonials/#{{ item.fileSlug }}" class="text-link">Full Quote →</a>
+                <a href="{{ item.data.sourceUrl }}" target="_blank" rel="noopener noreferrer" class="text-link">Source ↗</a>
+              </div>
+            </div>
+          </article>
+        {% endif %}
       {% endfor %}
     </div>
   </div>
