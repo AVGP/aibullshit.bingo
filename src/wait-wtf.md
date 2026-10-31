@@ -18,7 +18,9 @@ At least I hope you find that scary. If not: Yeah, no, I too love the revolution
 Number one: I see far too many people being far too excited about flooding the internet with AI slop.
 I don't want it, I don't think anyone wants it, yet there are people pumping it out like it's a gold rush.
 
-> But Martin, you've now done exactly that. - A concerned smartass
+> But Martin, you've now done exactly that.
+> 
+> — A concerned smartass
 
 Yeah, but to point out that this is bullshit. I mean, look at it, that's in the fucking domain name.
 
