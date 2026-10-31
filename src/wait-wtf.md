@@ -49,3 +49,11 @@ This can show up as [public speeches](https://www.youtube.com/watch?v=dJtHv9qKCo
 These aren't inherently bad or a problem, but if the framework becomes more substantial than what's put into it, that's a problem.
 
 Hilariously, that's where Generative AI shines the most, tho. It has seen it before, it has _tons_ of examples of the framework and just enough information to make it _seem_ like it has substance. And the framework supports it - we see the landmarks, we hear the key phrases, see the keywords, observe the key gestures. But it's not _real_.
+
+## This is satire
+
+If you, [like me and so many others](https://german.millermanschool.com/), haven't caught on yet, let me be clear here: This is satire.
+
+This is not meant to infringe anyone's feelings, copyright or whatever else you might see in this page.
+
+Have a laugh, touch some grass.
