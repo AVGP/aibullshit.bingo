@@ -1,0 +1,182 @@
+---
+layout: layouts/base.njk
+---
+
+<!-- HERO SECTION -->
+<section class="hero-section">
+  <div class="container hero-container">
+    <div class="hero-content">
+      <span class="eyebrow">{{ heroEyebrow }}</span>
+      <h1 class="hero-headline">{{ title }}</h1>
+      <p class="hero-intro-copy">{{ introCopy }}</p>
+      <div class="hero-actions">
+        <a href="{{ ctaPrimaryUrl }}" class="btn btn-primary">{{ ctaPrimaryText }}</a>
+        <a href="{{ ctaSecondaryUrl }}" class="btn btn-secondary">{{ ctaSecondaryText }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KEY METRICS BAR -->
+<section class="metrics-section" aria-label="Key Performance Metrics">
+  <div class="container metrics-grid">
+    {% for metric in site.metrics %}
+      <div class="metric-card">
+        <div class="metric-value">{{ metric.value }}</div>
+        <div class="metric-label">{{ metric.label }}</div>
+        <div class="metric-delta">{{ metric.delta }}</div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- STRATEGIC PILLARS & MANIFESTO -->
+<section class="section-block" id="pillars">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">STRATEGIC FRAMEWORK</span>
+      <h2>Core Capabilities for Enterprise AI Transformation</h2>
+    </div>
+
+    <div class="pillars-grid">
+      {% for pillar in collections.pillars %}
+        <article class="pillar-card">
+          <div class="pillar-card-top">
+            <span class="pillar-num">{{ pillar.data.code }}</span>
+            <span class="pillar-tag">{{ pillar.data.kpi }}</span>
+          </div>
+          <h3>{{ pillar.data.title }}</h3>
+          <div class="pillar-prose">
+            {{ pillar.templateContent | safe }}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+
+    <div class="markdown-prose manifesto-box">
+      {{ content | safe }}
+    </div>
+  </div>
+</section>
+
+<!-- INFOGRAPHICS & RESEARCH CHARTS -->
+<section class="section-block section-alt" id="insights">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">RESEARCH &amp; BENCHMARKS</span>
+      <h2>Data-Driven Proof of the Enterprise AI Pivot</h2>
+      <p class="section-lead">Empirical benchmarks and architectural blueprints illustrating how unified data infrastructure and generative AI drive bottom-line performance.</p>
+    </div>
+
+    <div class="infographics-stack">
+      {% for info in collections.infographics %}
+        <article class="infographic-panel">
+          <div class="infographic-panel-header">
+            <div>
+              <span class="figure-label">{{ info.data.figureId }} · {{ info.data.metricBadge }}</span>
+              <h3>{{ info.data.title }}</h3>
+              <p class="infographic-sub">{{ info.data.subtitle }}</p>
+            </div>
+          </div>
+          <div class="infographic-body">
+            {{ info.templateContent | safe }}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- THOUGHT LEADERSHIP -->
+<section class="section-block" id="thought-leadership">
+  <div class="container">
+    <div class="section-header-split">
+      <div>
+        <span class="eyebrow">THOUGHT LEADERSHIP</span>
+        <h2>Latest Perspectives &amp; Executive Briefings</h2>
+      </div>
+      <a href="/thought-leadership/" class="btn btn-secondary">View All Publications →</a>
+    </div>
+
+    <div class="articles-grid">
+      {% for post in collections.thoughtLeadership %}
+        <article class="article-card {% if loop.index <= 2 %}article-card-highlight{% endif %}">
+          <div>
+            <div class="article-meta-top">
+              <span class="category-tag">{{ post.data.category }}</span>
+              <span class="metric-chip">{{ post.data.featuredMetric }}</span>
+            </div>
+            <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+            <p class="article-excerpt">{{ post.data.excerpt }}</p>
+          </div>
+          <div class="article-footer">
+            <div class="article-author">
+              <strong>{{ post.data.author }}</strong>
+              <span>{{ post.data.pubDate }} · {{ post.data.readTime }}</span>
+            </div>
+            <a href="{{ post.url }}" class="text-link">Read Article →</a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section class="section-block section-alt" id="case-studies">
+  <div class="container">
+    <div class="section-header-split">
+      <div>
+        <span class="eyebrow">CASE STUDIES</span>
+        <h2>Delivering Measurable ROI for Fortune 500 Clients</h2>
+      </div>
+      <a href="/case-studies/" class="btn btn-secondary">All Case Studies →</a>
+    </div>
+
+    <div class="cases-grid">
+      {% for study in collections.caseStudies %}
+        <article class="case-card">
+          <div class="case-card-header">
+            <span class="category-tag">{{ study.data.sector }}</span>
+          </div>
+          <div class="case-highlight-row">
+            <span class="case-big-metric">{{ study.data.headlineMetric }}</span>
+            <span class="case-big-label">{{ study.data.headlineMetricLabel }}</span>
+          </div>
+          <h3><a href="{{ study.url }}">{{ study.data.title }}</a></h3>
+          <p class="case-summary">{{ study.data.summary }}</p>
+          <a href="{{ study.url }}" class="text-link">Read Case Study →</a>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP PREVIEW -->
+<section class="section-block" id="leadership">
+  <div class="container">
+    <div class="section-header-split">
+      <div>
+        <span class="eyebrow">LEADERSHIP</span>
+        <h2>Guided by Seasoned Enterprise Executives</h2>
+      </div>
+      <a href="/team/" class="btn btn-primary">Meet the Full Team →</a>
+    </div>
+
+    <div class="team-preview-grid">
+      {% for member in collections.team %}
+        <article class="exec-card">
+          <div class="exec-photo-wrap">
+            <img src="{{ member.data.photo }}" alt="{{ member.data.name }}" loading="lazy" class="exec-photo" />
+          </div>
+          <div class="exec-card-body">
+            <h3>{{ member.data.name }}</h3>
+            <p class="exec-role">{{ member.data.role }}</p>
+            <p class="exec-creds">{{ member.data.credentials }}</p>
+            <a href="/team/#{{ member.fileSlug }}" class="text-link">View Bio →</a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

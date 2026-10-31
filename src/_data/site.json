@@ -1,0 +1,35 @@
+{
+  "name": "AI Business Future Solutions",
+  "legalName": "AI Business Future Solutions Inc.",
+  "tagline": "Enterprise AI Strategy, Architecture & Transformation",
+  "headquarters": "New York · London · Zurich · Singapore",
+  "metrics": [
+    {
+      "value": "3.4x",
+      "label": "Average Return on AI Investment",
+      "delta": "Audited across Fortune 500 clients"
+    },
+    {
+      "value": "68%",
+      "label": "Faster Insight-to-Action Cycle",
+      "delta": "Unified data lake architecture"
+    },
+    {
+      "value": "140+",
+      "label": "Global Enterprise Transformations",
+      "delta": "Across 18 core industries"
+    },
+    {
+      "value": "99.9%",
+      "label": "Enterprise Governance Compliance",
+      "delta": "End-to-end model auditability"
+    }
+  ],
+  "nav": [
+    { "label": "Overview", "url": "/" },
+    { "label": "Research & Charts", "url": "/#insights" },
+    { "label": "Thought Leadership", "url": "/thought-leadership/" },
+    { "label": "Case Studies", "url": "/case-studies/" },
+    { "label": "Leadership", "url": "/team/" }
+  ]
+}

@@ -1,0 +1,54 @@
+---
+layout: layouts/base.njk
+---
+
+<article>
+  <header class="page-hero">
+    <div class="container">
+      <div class="breadcrumb-row">
+        <a href="/case-studies/" class="text-link">← Back to Case Studies</a>
+        <span class="category-tag">{{ sector }}</span>
+      </div>
+      <h1 class="page-title">{{ title }}</h1>
+      <p class="page-subtitle">{{ client }}</p>
+
+      <div class="case-hero-kpis">
+        <div class="case-hero-kpi primary">
+          <span class="kpi-num">{{ headlineMetric }}</span>
+          <span class="kpi-lbl">{{ headlineMetricLabel }}</span>
+        </div>
+        {% for m in secondaryMetrics %}
+          <div class="case-hero-kpi">
+            <span class="kpi-num">{{ m.value }}</span>
+            <span class="kpi-lbl">{{ m.label }}</span>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </header>
+
+  <section class="section-block">
+    <div class="container monograph-layout">
+      <div class="markdown-prose monograph-body">
+        {{ content | safe }}
+      </div>
+
+      <aside class="monograph-sidebar">
+        <div class="sidebar-box">
+          <span class="eyebrow">VERIFIED OUTCOME</span>
+          <div class="sidebar-big-stat">{{ headlineMetric }}</div>
+          <p>{{ headlineMetricLabel }}</p>
+          <hr />
+          <h4>Other Case Studies</h4>
+          <ul class="sidebar-links">
+            {% for study in collections.caseStudies %}
+              {% if study.url != page.url %}
+                <li><a href="{{ study.url }}">{{ study.data.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+</article>

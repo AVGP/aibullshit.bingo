@@ -1,0 +1,49 @@
+---
+layout: layouts/base.njk
+---
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">{{ eyebrow }}</span>
+    <h1 class="page-title">{{ title }}</h1>
+    <p class="page-subtitle">{{ subtitle }}</p>
+  </div>
+</section>
+
+<section class="section-block">
+  <div class="container">
+    <div class="markdown-prose intro-prose">
+      {{ content | safe }}
+    </div>
+
+    <div class="team-full-stack">
+      {% for member in collections.team %}
+        <article class="exec-dossier-card" id="{{ member.fileSlug }}">
+          <div class="dossier-photo-col">
+            <img src="{{ member.data.photo }}" alt="{{ member.data.name }}" class="dossier-photo" />
+          </div>
+
+          <div class="dossier-content-col">
+            <h2>{{ member.data.name }}</h2>
+            <p class="dossier-role">{{ member.data.role }}</p>
+            <p class="dossier-creds">{{ member.data.credentials }}</p>
+
+            <blockquote class="dossier-quote">
+              “{{ member.data.signatureQuote }}”
+            </blockquote>
+
+            <div class="markdown-prose dossier-bio">
+              {{ member.templateContent | safe }}
+            </div>
+
+            <div class="competency-tags">
+              {% for comp in member.data.competencies %}
+                <span class="comp-pill">{{ comp }}</span>
+              {% endfor %}
+            </div>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

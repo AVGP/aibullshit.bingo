@@ -1,0 +1,64 @@
+---
+layout: layouts/base.njk
+---
+
+<article>
+  <header class="page-hero">
+    <div class="container">
+      <div class="breadcrumb-row">
+        <a href="/thought-leadership/" class="text-link">← Back to Thought Leadership</a>
+        <span class="category-tag">{{ category }}</span>
+      </div>
+      <h1 class="page-title">{{ title }}</h1>
+      <p class="page-subtitle">{{ subtitle }}</p>
+
+      <div class="monograph-byline-bar">
+        <div>
+          <span class="meta-label">Authored By</span>
+          <strong>{{ author }}</strong> ({{ authorRole }})
+        </div>
+        <div>
+          <span class="meta-label">Published</span>
+          <strong>{{ pubDate }} · {{ readTime }}</strong>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section-block">
+    <div class="container monograph-layout">
+      <div class="markdown-prose monograph-body">
+        {{ content | safe }}
+      </div>
+
+      <aside class="monograph-sidebar">
+        <div class="sidebar-box">
+          <span class="eyebrow">KEY BENCHMARK</span>
+          <div class="sidebar-big-stat">{{ featuredMetric }}</div>
+          <p>Verified across AI Business Future Solutions enterprise client engagements.</p>
+          <hr />
+          <h4>More Thought Leadership</h4>
+          <ul class="sidebar-links">
+            {% for post in collections.thoughtLeadership %}
+              {% if post.url != page.url %}
+                <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+</article>
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  document.querySelectorAll('pre > code.language-mermaid').forEach((codeBlock) => {
+    const pre = codeBlock.parentElement;
+    const container = document.createElement('div');
+    container.className = 'mermaid';
+    container.textContent = codeBlock.textContent;
+    pre.replaceWith(container);
+  });
+  mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+</script>
