@@ -1,0 +1,74 @@
+---
+layout: layouts/base.njk
+---
+
+<section class="page-hero no-print">
+  <div class="container">
+    {% if eyebrow %}<span class="eyebrow">{{ eyebrow }}</span>{% endif %}
+    <h1 class="page-title">{{ title }}</h1>
+    {% if subtitle %}<p class="page-subtitle">{{ subtitle }}</p>{% endif %}
+  </div>
+</section>
+
+<section class="section-block bingo-section">
+  <div class="container">
+    <div class="markdown-prose intro-prose no-print">
+      {{ content | safe }}
+    </div>
+
+    <div class="bingo-controls-bar no-print">
+      <div class="bingo-actions-left">
+        <button type="button" id="bingo-generate-btn" class="btn btn-primary">
+          Generate
+        </button>
+        <button type="button" id="bingo-print-btn" class="btn btn-secondary">
+          Print
+        </button>
+        <button type="button" id="bingo-clear-btn" class="btn btn-secondary">
+          Clear Marks
+        </button>
+      </div>
+      <div class="bingo-telemetry">
+        <span id="bingo-deck-status" class="comp-pill">Deck Ready</span>
+        <span id="bingo-score-status" class="metric-chip">1 / 25 Marked</span>
+      </div>
+    </div>
+
+    <div id="bingo-win-banner" class="bingo-win-banner no-print" hidden>
+      <strong>PARADIGM SHIFT ACHIEVED — BINGO!</strong>
+      <span>You have unlocked 5-in-a-row top-down stakeholder synergy.</span>
+    </div>
+
+    <div class="bingo-sheet-card" id="bingo-printable-sheet">
+      <header class="bingo-sheet-header">
+        <div>
+          <span class="bingo-sheet-eyebrow">AI BUSINESS FUTURE SOLUTIONS · EXECUTIVE BINGO</span>
+          <h2 class="bingo-sheet-title">Generative AI Corporate Bullshit Bingo</h2>
+        </div>
+        <div class="bingo-sheet-meta">
+          <div id="bingo-sheet-id" class="bingo-sheet-id">SHEET #01</div>
+          <div class="bingo-sheet-rules">5 in a row (horizontal, vertical, or diagonal) = Full-Stack Synergy</div>
+        </div>
+      </header>
+
+      <div class="bingo-col-headers" aria-hidden="true">
+        <div class="bingo-col-head"><span>B</span><small>Boardroom</small></div>
+        <div class="bingo-col-head"><span>I</span><small>Inflection</small></div>
+        <div class="bingo-col-head"><span>N</span><small>Narrative</small></div>
+        <div class="bingo-col-head"><span>G</span><small>Governance</small></div>
+        <div class="bingo-col-head"><span>O</span><small>Omnichannel</small></div>
+      </div>
+
+      <div id="bingo-grid" class="bingo-grid" role="grid" aria-label="Generative AI Corporate Bullshit Bingo Grid">
+        <!-- Populated dynamically by /assets/js/bingo.js -->
+      </div>
+
+      <footer class="bingo-sheet-footer">
+        <span>aibullshit.bingo · Valid for Keynotes, Earnings Calls, Town Halls &amp; Think-Tank Webinars</span>
+        <span id="bingo-pool-meta">Curated from 200+ CEO, Analyst &amp; AI Hype Takes</span>
+      </footer>
+    </div>
+  </div>
+</section>
+
+<script src="/assets/js/bingo.js"></script>
