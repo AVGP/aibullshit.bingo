@@ -3,7 +3,7 @@ name: "Jensen Huang"
 role: "Founder, President & Chief Executive Officer"
 company: "NVIDIA"
 context: "Announcing NVIDIA DSX POD Reference Architecture for Enterprise AI Factories"
-photo: "https://upload.wikimedia.org/wikipedia/commons/0/05/JensenHuangSC18.jpg"
+photo: "/assets/images/testimonials/jensen-huang.jpg"
 order: 8
 quote: "An AI factory creates value when it starts producing tokens — not when construction is complete. With NVIDIA DSX POD, we're bringing factory-built precision and speed to AI infrastructure construction — reducing deployment time from months to weeks so customers can scale capacity and bring revenue-generating production online faster."
 sourceTitle: "NVIDIA Newsroom: NVIDIA Introduces DSX POD AI Factories"
